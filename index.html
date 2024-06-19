@@ -7,39 +7,36 @@
     <title>Praja Konversi Suhu</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
         <h1>Website Konversi Suhu</h1>
     </header>
-    <!--Main Content-->
-    <h3>Masukkan suhu dalam derajat Celcius (&deg;C) ke kotak di bawah, lalu klik tombol konversi untuk mendapatkan
-        hasil
-        konversi dalam bentuk Fahrenheit (&deg;F)</h3>
     <main>
+        <h3>Masukkan suhu dalam derajat Celcius (&deg;C) ke kotak di bawah, lalu klik tombol konversi untuk mendapatkan
+            hasil konversi dalam bentuk Fahrenheit (&deg;F)</h3>
         <!--Section Celcius-->
-        <section class="container">
+        <section class="container celcius-container">
             <header>
                 <h3>Celcius (&deg;C)</h3>
             </header>
             <section>
-                <label for="celcius-input">Celcius:</label>
                 <textarea id="celcius-input"></textarea>
                 <section>
                     <button id="convert-button">Konversi</button>
                     <button id="reset-button">Reset</button>
-                    <button id="reverse-button">Reverse</button>
+                    <button id="reverse-button" class="reverse-button">Reverse</button>
                 </section>
             </section>
         </section>
         <!--Section Fahrenheit-->
-        <section class="container">
+        <section class="container result-container">
             <header>
                 <h3>Fahrenheit (&deg;F)</h3>
             </header>
             <section>
-                <label for="fahrenheit-output">Fahrenheit:</label>
                 <textarea id="fahrenheit-output" readonly></textarea>
             </section>
         </section>
@@ -49,25 +46,24 @@
                 <h3>Kalkulasi</h3>
             </header>
             <section>
-                <label for="calculation-output">Kalkulasi:</label>
                 <textarea id="calculation-output" readonly></textarea>
             </section>
         </section>
     </main>
-    <p>Konversi Fahrenheit Ke Celcius </p>
+    <p>Konversi Fahrenheit Ke Celcius (Reverse)</p>
     <!--Section Formula-->
     <section>
         <header>
             <h1>Cara Konversi Dari Celcius (&deg;C) Ke Fahrenheit (&deg;F)</h1>
         </header>
         <hr>
-        <p>Suhu <span class="font">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span
+        <p class="formula">Suhu <span class="font">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span
                 class="font">S</span> dalam derajat Celcius (&deg;C) kali 9/5 tambah 32.</p>
-        <p><span class="font">S</span><sub>(&deg;F)</sub> = (<span class="font">S</span><sub>(&deg;C)</sub> x 9/5) + 32
-        </p>
-        <p>Atau</p>
-        <p><span class="font">S</span><sub>(&deg;F)</sub> = (<span class="font">S</span><sub>(&deg;C)</sub> x 1.8) + 32
-        </p>
+        <p class="formula"><span class="font">S</span><sub>(&deg;F)</sub> = (<span
+                class="font">S</span><sub>(&deg;C)</sub> x 9/5) + 32</p>
+        <p class="formula">Atau</p>
+        <p class="formula"><span class="font">S</span><sub>(&deg;F)</sub> = (<span
+                class="font">S</span><sub>(&deg;C)</sub> x 1.8) + 32</p>
         <br>
         <br>
         <br>

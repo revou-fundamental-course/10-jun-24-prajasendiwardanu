@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         let inputValue = parseFloat(celciusInput.value);
 
         if (isNaN(inputValue)) {
-            alert("Please enter a valid number");
+            alert("Mohon masukkan angka yang valid");
             return;
         }
 
